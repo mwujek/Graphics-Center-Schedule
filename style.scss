@@ -1,0 +1,149 @@
+$typewriter : 'courier-prime', 'courier', sans-serif;
+$sans-serif: "sofia-pro-soft", sans-serif;
+
+body, html{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: $typewriter;
+}
+body{
+	background: #424242;
+}
+
+/* ungrid.css (97 bytes minified) */
+@media (min-width: 10em) {
+	.row { width: 100%; display: table; table-layout: fixed; }
+	.col { display: table-cell; }
+}
+
+
+
+
+
+h1{
+  text-align:center;
+  padding:0px;
+  margin:0px;
+  &:hover{
+    cursor:pointer;
+  }
+}
+#path2{
+  opacity:1 !important;
+}
+svg{
+  display:block;
+  margin:0 auto;
+  margin-top:20px;
+  z-index: -1;
+  top: -50px;
+  opacity: 0;
+  position: relative;
+    max-width: 100%;
+  height: 70%;
+}
+
+#slider{
+  width: 580px;
+  margin:10px auto;
+  background:#ccc;
+}
+
+.ui-widget-content {
+  background-color:rgba(255, 255, 255, 0.2);
+}
+
+header{
+	margin: 20px auto;
+	h1{
+		font-family: $sans-serif;
+		color: #F5F5F5 !important;
+		font-size: 26px;
+  		text-transform: uppercase;
+  		letter-spacing: 3px;
+	}
+	h2{
+		font-family: $typewriter;
+		color: #9E9E9E;
+		font-size: 18px;
+		text-align: center;
+		margin-top: 10px;
+		letter-spacing: 0.5px;
+	}
+}
+
+nav{
+	z-index: 1;
+	ul{
+		background: #424242;
+		text-align: center;
+		li{
+			width: 40px;
+			height: 40px;
+			border: 1px solid #aaa;
+			color: #aaa;
+			opacity: 0.5;
+			transition:0.3s opacity;
+			line-height: 44px;
+			display: inline-block;
+			margin: 0px 6px;
+		}
+	}
+}
+.reveal{
+	&:hover{
+				opacity: 1;
+				cursor: pointer;
+			}
+}
+.active-li{
+	opacity: 1
+}
+.name-entry{
+	opacity: 0;
+}
+
+.name-container{
+	position: relative;
+  	top: -70px;
+	max-width: 400px;
+	margin: 0 auto;
+	text-align: center;
+	.row{
+		text-align: center;
+		padding-bottom: 5px;
+	}
+	.col{
+		padding-left: 25px;
+		text-align: left;
+		.color-box{
+			width: 16px;
+			height: 16px;
+			border-radius: 2px;
+			display: inline-block;
+		}
+		.name{
+			position: relative;
+			top: -3px;
+			color: #9E9E9E;
+			padding-left: 10px;
+
+		}
+	}
+}
+
+.box1{ background: #7C58C5; }//7C58C5E6514C
+.box2{ background: #E6514C; }//4AB7F9
+.box3{ background: #70BB66; }//F9C02B
+.box4{ background: #F9C02B; }
+.box5{ background: #4AB7F9; }
+.box6{ background: #F79724; }
+
+@media (max-width: 20em) {
+	
+	.name{
+		font-size: 13px;
+	}
+}
